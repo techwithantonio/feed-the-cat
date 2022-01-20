@@ -6,36 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hi, I'm a cat!</title>
     <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="">
+    
 </head>
 
 <body>
-    <header>
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7a3ec529632909.55fc107b84b8c.png" alt="">
-        <p>This is our first website using HTML and CSS</p>
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7a3ec529632909.55fc107b84b8c.png" alt="">
-    </header>
-
     <main>
-        <div class="message-container">
-            <h1>Please feed me!</h1>
-            <h2>Thank you</h2>
-            <p>Hi I'm kind of hungry could you feed me please?</p>
-        </div>
-
-        <div class="image-container">
-            
-            <img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d" alt="this is a cat">
-            <h2>Try div</h2>
-        </div>
+        <section class="card-container">
+            <div class="message-container">
+                <h1>Plese feed Loki</h1>
+                <p>Hi. I'm kind of hungry could you give me some food?</p>
+            </div>
+    
+            <div class="image-container">
+                
+                <img src="https://i.guim.co.uk/img/media/26392d05302e02f7bf4eb143bb84c8097d09144b/446_167_3683_2210/master/3683.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=49ed3252c0b2ffb49cf8b508892e452d" alt="this is a cat">
+            </div>
+            <div class="thank-you-container">
+                <i><h4 id="display-message">...</h4></i>
+                <section class="button-container">
+                    <button id="feed-btn" onclick="feedCatButton()">Feed him</button>
+                    <button id="no-feed-btn" onclick="noFeedCatButton()">No!
+                    </button>
+                </section> 
+            </div>
+        </section>
         
-        <button id="feed-btn">
-            Feed the cat!
-        </button>
+      
     </main>
 
     <footer>
         <a href="https://github.com/techwithantonio/">Antonio's Github</a>
         <a href="https://github.com/arief360x/">Arief's Github</a>
     </footer>
+    <script src="/index.js"></script>
 </body>
 </html>
