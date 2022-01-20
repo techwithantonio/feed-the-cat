@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: darkcyan;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.image-container {
+    height: 300px;
+    width: auto;
+}
+
+.image-container img{
+    height: 70%;
+    width: auto;
+}
+
+#feed-btn{
+    height: 40px;
+    width: 120px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
