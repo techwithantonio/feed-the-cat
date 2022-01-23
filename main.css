@@ -2,7 +2,7 @@
     --font-large: 3.6rem;
     --font-regular: 2.0rem;
     --font-small: 1.6rem;
-    --primary-color: #FFA500;
+    --primary-color: #FA8072;
     --secondary-color: #FF5733;
     --cta-color: #9ACD32;
     --black: #696969;
@@ -17,6 +17,7 @@ body {
     font-size: var(--font-regular);
     margin: 0;
     font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
     
 }
 
@@ -28,6 +29,7 @@ main {
     align-items: center;
     text-align: center;
     height: 100vh;
+    background-color: #AFEEEE
 }
 
 .card-container {
@@ -36,6 +38,8 @@ main {
     margin: 24px;
     min-width: 300px;
     max-width: 520px;
+    background-color: white;
+    box-shadow: 0px 4px #888888;
 }
 
 .message-container {
@@ -50,12 +54,13 @@ main {
 .message-container h1 {
     font-size: var(--font-large);
     margin: 4px 12px;
-    color: white;
+    color: black;
 }
 
 .message-container p {
     width: 72%;
     margin: 0px 4px 12px;
+    color: #8B4513;
 }
 
 .image-container {
@@ -81,7 +86,7 @@ main {
 .thank-you-container h4 {
     margin-top: 24px;
     margin-bottom: 12px;
-    color: #696969;
+    color: #8B4513;
 }
 
 .button-container {
@@ -120,6 +125,8 @@ footer {
     display: flex;
     justify-content: center;
     margin: 8px auto;
+    background-color: #E0FFFF;
+    margin: 0;
 }
 
 footer a {
