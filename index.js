@@ -1,9 +1,16 @@
-function feedCatButton() {
-    const  display = document.getElementById("display-message");
-    display.innerHTML = "Thank you, I love you ❤️";
+const  display = document.getElementById("display-message");
+
+function sleep(milliseconds) {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
-function noFeedCatButton() {
-    const  display = document.getElementById("display-message");
-    display.innerHTML = "I hate you 😡";
+function feedCatButton() {
+    display.textContent = "Thank you, I love you ❤️";
+}
+
+async function noFeedCatButton() {
+    
+    display.textContent = "I hate you 😡";
+    await sleep(1000);
+    document.getElementById("display-img").src = "https://c.tenor.com/So_wSVwEzmYAAAAC/cat-died.gif";
 }
